@@ -48,3 +48,7 @@ header ul li a {
   padding: 8px 15px;
   border-radius: 25px;
 }
+.imgBox img {
+  width: 500px;
+  animation: animate 5s linear infinite;
+}
