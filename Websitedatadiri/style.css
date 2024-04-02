@@ -18,7 +18,7 @@ section {
   width: calc(100% - 100px);
   min-height: calc(100vh - 280px);
   min-height: 300px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.482);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   display: flex;
@@ -114,7 +114,7 @@ header ul li a.active {
   align-items: center;
   border-radius: 50%;
   margin: 5px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  
 }
 
 .icon li:hover a img {
@@ -126,35 +126,57 @@ header ul li a.active {
 }
 .icon {
   position: absolute;
-  left: 1050px;
+  left: 1020px;
 }
-.box-Education{
-  text-align: center;
-  color: #4d4d4d;
-  margin-top: 30px;
-  align-content: center;
-}
-.boxkiri, .boxtengah, .boxkanan{
-  width: 300px;
-  height: 320px;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 30px 30px;
-  margin: 70px 20px 20px 55px;
-  border-radius: 10px;
-  float: left;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #a4cce7;
 }
 
 .container {
-  position: relative;
-  width: calc(100% - 100px);
-  min-height: calc(100vh - 280px);
-  min-height: 300px;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  border-radius : 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
+  justify-content: space-evenly;
+  padding: 2rem;
+
+  
+}
+.container .card {
+  max-width: 1000px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid #ffffff80;
+  padding-top: 80px;
+  padding-left: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  font-weight: 50;
+  font-size: 0,5em;
+}
+.container .card .imgBx{
+	position: center;
+	width:100px;
+	height: 80px;
+	top: 100px;
+	left:100px;
+	box-shadow: 0 5px 20px rbga (0,0,0,1.2);
+}
+.container .card .imgBx img
+{
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.imgBx:hover img{
+	transform: scale(1.1);
 }
